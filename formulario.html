@@ -12,7 +12,7 @@
   <h1>Bienvenidos a mi fiesta</h1>
   <h2>Por favor, confirmar asistencia:</h2>
 
-  <form class="formulario">
+  <form id="formulario">    <!--//estaba como class en js esta como id por el # -->
     Nombre <input type="text" name="name" id="name">
     <br />
     Edad <input type="number" name="age" id="age">
@@ -29,8 +29,19 @@
     <input type="submit">
   </form>
 
-  <div>
+  <div id="lista-de-invitados"> <!--se agrego id-->
     <h2>Lista de invitados</h2>
+
+    <div class="elemento-lista">
+      <span>Nombre: </span>
+      <input type="text" value="Nombre" disabled>
+      <br>
+  </div>
+
+<!--agregue boton eliminar :c -->
+    <button>
+      <button id="boton-borrar">Borrar</button>
+  </button>
 
   </div>
 
